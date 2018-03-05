@@ -78,11 +78,27 @@ table.smalltext{
 }
 
 .reveal .slide-bullets{
-	max-width: 400px;
-	margin: 0 auto;
+	max-width: 500px;
+	margin: 1em auto;
 }
 
+.reveal section .left-align{
+	max-width: 650px;
+	margin: 0 auto;
+	top: 50px
+}
 .reveal .slide-bullets li{
 	text-align: left;
-
+	margin: .25em;
+}
+.reveal section p, .reveal section ul, .reveal section p{
+	font-size: .7em;
+	font-weight: lighter;
+	line-height: 1.2em;
+}
+.green{
+	color: #92BB44;
+}
+.blue{
+	color: #01A9B4;
 }
