@@ -91,14 +91,62 @@ table.smalltext{
 	text-align: left;
 	margin: .25em;
 }
-.reveal section p, .reveal section ul, .reveal section p{
+.reveal section p{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.reveal section p, .reveal section ul, .reveal section p, .reveal section ol{
 	font-size: .7em;
 	font-weight: lighter;
 	line-height: 1.2em;
+}
+
+.reveal code{
+	font-size: .5em;
+	padding: .25em 1em;
+	line-height: 1.5em;
+	font-family: monospace;
 }
 .green{
 	color: #92BB44;
 }
 .blue{
 	color: #01A9B4;
+}
+.red{
+	color: #af0000;
+}
+.reveal .full{
+	display: block;
+	margin: 0 auto;
+}
+.reveal .title-slide{
+	background: black;
+}
+.reveal .title-slide.blue{
+	background: #1b3866;
+}
+
+.reveal .title-slide.red{
+	background: #af0000;
+}
+
+.reveal .title-slide.blue h3, .reveal .title-slide.blue h4, .reveal .title-slide.blue p, .reveal .title-slide.blue ul{
+	color: white;
+}
+
+.reveal .title-slide.red h3, .reveal .title-slide.red h4, .reveal .title-slide.red p, .reveal .title-slide.red ul{
+	color: #ffaaaa;
+}
+
+
+.reveal .slide-table{
+	padding: 1em;
+	background: white;
+	margin: 0 auto;
+	font-size: .7em;
+	font-weight: lighter;
+	line-height: 1.2em;
+	width: 100%;
+	max-width: 600px;
 }

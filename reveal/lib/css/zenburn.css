@@ -5,18 +5,30 @@ based on dark.css by Ivan Sagalaev
 
 */
 
+.reveal .hljs{
+  font-family: monospace;
+  text-align: left;
+  padding: .25em 1em;
+  line-height: 1.25em;
+  font-size: .7em;
+}
+
+.reveal .hljs span, .reveal section pre code{
+  font-size: .7em;
+}
+
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #3f3f3f;
-  color: #dcdcdc;
+  background: white;
+  font-family: monospace;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-tag {
-  color: #e3ceab;
+  color: #4d4d4c;
 }
 
 .hljs-template-tag {
@@ -29,8 +41,12 @@ based on dark.css by Ivan Sagalaev
 
 .hljs-variable,
 .hljs-template-variable,
-.hljs-attribute {
-  color: #efdcbc;
+.hljs-attr {
+  color: #85aff2;
+}
+
+.hljs-attribute{
+  color: gray;
 }
 
 .hljs-literal {
@@ -47,7 +63,7 @@ based on dark.css by Ivan Sagalaev
 .hljs-selector-class,
 .hljs-section,
 .hljs-type {
-  color: #efef8f;
+  color: #4d4d4c;
 }
 
 .hljs-symbol,
@@ -60,12 +76,15 @@ based on dark.css by Ivan Sagalaev
 .hljs-string,
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #cc9393;
+  color: #7f9f7f;
 }
 
 .hljs-addition,
 .hljs-comment,
-.hljs-quote,
+.hljs-quote{
+  color: #7f9f7f;
+}
+
 .hljs-meta {
   color: #7f9f7f;
 }
