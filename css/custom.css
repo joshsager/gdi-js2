@@ -116,6 +116,10 @@ table.smalltext{
 .red{
 	color: #af0000;
 }
+
+.white{
+	color: white;
+}
 .reveal .full{
 	display: block;
 	margin: 0 auto;
@@ -149,4 +153,8 @@ table.smalltext{
 	line-height: 1.2em;
 	width: 100%;
 	max-width: 600px;
+}
+
+.reveal h4{
+	margin-top: 1em;
 }
