@@ -35,13 +35,232 @@
         </section>
 
         <section>
-          <h3>Class Links</h3>
+          <h3>You will learn about</h3>
           <ul class="slide-bullets">
-            <li><a href="class1.html">Class 1</a></li>
-            <li><a href="class2.html">Class 2</a></li>
-            <li><a href="class3.html">Class 3</a></li>
-            <li><a href="class4.html">Class 4</a></li>
+            <li class="fragment">AJAX</li>
+            <li class="fragment">Load JSON File Locally</li>
+            <li class="fragment">Load JSON File From Another Place</li>
+            <li class="fragment">API's and endpoints</li>
+            <li class="fragment">Housekeeping</li>
+            <li class="fragment">Resources</li>
           </ul>
+        </section>
+
+        <section class="title-slide red">
+          <h3>AJAX</h1>
+          <h4>A new world for the web</h4>
+        </section>
+
+        <section>
+          <h3>An industry was reborn</h3>
+          <p>On February 18, 2005 Jesse James Garrett wrote an article explaining a new approach and called it <a href="http://adaptivepath.org/ideas/ajax-new-approach-web-applications/" target="_blank">AJAX</a></p>
+          <p>This was the dawn of what we would soon call Web 2.0.</p>
+        </section>
+
+        <section>
+          <h3>Asynchronous JavaScript And XML (AJAX)</h3>
+          <p><span class="fragment">It is a process in which to send and receive information in various formats, </span><span class="fragment">including JSON, XML, HTML, and text files.</span><span class="fragment"> AJAX’s most appealing characteristic is its "asynchronous" nature, </span><span class="fragment">which means it can communicate with the server, exchange data, and update the page without having to refresh the page.</span></p>
+        </section>
+
+        <section class="title-slide red">
+          <h3>Ummm So What does that mean?</h1>
+          <h4>You can update one section of <a href="https://www.w3schools.com/xml/tryit.asp?filename=tryajax_first" target="_blank">web page without refreshing</a>.</h4>
+        </section>
+
+        <section class="title-slide red">
+          <h3>2005 was a long time ago...</h1>
+          <h4>Does anybody use that anymore?</h4>
+        </section>
+
+        <section>
+          <h3>AJAX is EVERYWHERE</h3>
+          <p class="fragment">AJAX is responsible for twitter, facebook, google type ahead search, basecamp, gmail, invision, the list goes on... and on...</p>
+          <p class="fragment">Some might even say that modern day Silicon Valley start ups are built on AJAX.</p>
+        </section>
+
+        <section>
+          <h3>So how does it work?</h3>
+          <p class="fragment">Similar to frameworks, this is a pattern that can be implemented when needed</p>
+          <ol class="slide-bullets">
+            <li class="fragment">JavaScript sends a request to load a file</li>
+            <li class="fragment">On successful load trigger something to happen</li>
+            <li class="fragment">Typically that trigger will parse the data and update part of the web page</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>AJAX Example</h3>
+          <h4>MDN has a really good <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started" target="_blank">AJAX example</a></h4>
+          <pre><code style="font-size:.4em">
+  var httpRequest;
+  function makeRequest() {
+      httpRequest = new XMLHttpRequest();
+
+      if (!httpRequest) {
+        alert('Giving up :( Cannot create an XMLHTTP instance');
+        return false;
+      }
+      httpRequest.onreadystatechange = alertContents;
+      httpRequest.open('GET', 'test.html');
+      httpRequest.send();
+    }
+
+    function alertContents() {
+      if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.status === 200) {
+          alert(httpRequest.responseText);
+        } else {
+          alert('There was a problem with the request.');
+        }
+      }
+    }
+          </pre></code>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Develop It</h1>
+          <h4>Load JSON Files</h4>
+          <p class="fragment">Let's try and load in a JSON file</p>
+        </section>
+
+        <section>
+          <h3>We have JSON, but what do you do with it?</h3>
+          <h4>You will need to parse it</h4>
+          <pre><code>
+function alertContents() {
+  if (httpRequest.readyState === XMLHttpRequest.DONE) {
+    if (httpRequest.status === 200) {
+      var response = JSON.parse(httpRequest.responseText);
+      alert(response.computedString);
+    } else {
+      alert('There was a problem with the request.');
+    }
+  }
+}
+          </pre></code>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Develop It</h1>
+          <h4>Load JSON Files From Other Places</h4>
+          <p class="fragment">Using this path https://api.meetup.com/2/cities</p>
+          <p class="fragment">Let's load in this data and display it on the screen via templating from scratch.</p>
+        </section>
+
+        <section class="title-slide">
+          <h3>API's and endpoints</h1>
+          <h4>The Modern Way</h4>
+        </section>
+
+        <section>
+          <h3>API's and endpoints</h1>
+          <p>Let's talk about <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods" target="_blank">Request</a> / <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank">Response</a> </p>
+        </section>
+
+        <section class="title-slide">
+          <h3>HOLD UP! You mean to tell me</h1>
+          <h4 class="fragment">Yep</h4>
+          <h4 class="fragment">Visiting a web page is a get request</h4>
+        </section>
+
+        <section>
+          <h3>Placeholder for mind blown gif</h3>
+          <p class="fragment">Just kidding I have one</p>
+          <img class="fragment" src="http://www.reactiongifs.com/wp-content/uploads/2013/10/woah.gif" />
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Draw It</h1>
+          <h4>The journey of a web request to a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">RESTFUL API</a></h4>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>There's all kinds of data out there</h1>
+          <h4>With all kinds of API's</h4>
+          <ul class="slide-bullets">
+            <li class="fragment"><a href="https://api.data.gov/" target="_blank">government data</a></li>
+            <li class="fragment"><a href="https://api.nasa.gov/" target="_blank">nasa data</a></li>
+            <li class="fragment"><a href="https://earthquake.usgs.gov/fdsnws/event/1/" target="_blank">USGS earthquake</a></li>
+            <li class="fragment"><a href="https://apilist.fun/" target="_blank">API FUN List</a></li>
+          </ul>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Go out a make something!</h1>
+          <h4>Like an earth <a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-76.93,29.82,1437" target="_blank">wind map</a></h4>
+        </section>
+
+        <section>
+          <h3>Tools that can help</h3>
+          <ul class="slide-bullets">
+            <li class="fragment"><a href="https://paw.cloud/" target="_blank">PAW for mac</a></li>
+            <li class="fragment"><a href="https://www.telerik.com/fiddler" target="_blank">Fiddler for PC</a></li>
+          </ul>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Housekeeping</h1>
+          <h4>Some things to keep in mind</h4>
+        </section>
+
+        <section>
+          <h3>You should start your JavaScript documents link this</h3>
+          <pre><code>
+(function() {
+// JS CODE
+})()  </pre></code>
+        </section>
+
+        <section>
+          <h3>Making sure the page has loaded is a good idea. Otherwise your DOM elements will be undefined</h3>
+          <pre><code>
+(function() {
+window.addEventListener('onload', init, false);
+
+function onload(event)){
+  // start application
+}
+})()  </pre></code>
+        </section>
+
+        <section>
+          <h3><a href="https://www.w3schools.com/js/js_strict.asp" target="_blank">Use strict</a> is a good idea too.</h3>
+          <pre><code>
+"use strict";
+
+(function() {
+
+}
+})()  </pre></code>
+        </section>
+
+        <section>
+          <h3>Additional Resources</h3>
+          <h4></h4>
+          <ul class="slide-bullets">
+            <li class="fragment"><a href="http://jstherightway.org/#the-good-parts" target="_blank">JavaScript The Right Way</a></li>
+            <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials" target="_blank">MDN Tutorials</a></li>
+          </ul>
+        </section>
+
+
+
+
+        <section>
+          <h3>Summary</h3>
+          <ul class="slide-bullets">
+            <li class="fragment">AJAX</li>
+            <li class="fragment">Load JSON File Locally</li>
+            <li class="fragment">Load JSON File From Another Place</li>
+            <li class="fragment">API's and endpoints</li>
+            <li class="fragment">Housekeeping</li>
+            <li class="fragment">Resources</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Thank you!</h3>
+          <img src="https://media1.tenor.com/images/0f8a9abf556488c8fa0b327cec6b1a9f/tenor.gif" />
         </section>
 
       </div>
