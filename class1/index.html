@@ -34,36 +34,9 @@
           <h4>Class 1</h4>
         </section>
 
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software development through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul class="slide-bullets">
-            <li>We are here for you!</li>
-            <li>Every question is important.</li>
-            <li>Help each other.</li>
-            <li>Have fun.</li>
-          </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p class="blue">Tell us about yourself.</p>
-          <ul class="slide-bullets">
-            <li>Who are you?</li>
-            <li>What do you hope to get out of the class?</li>
-            <li>What programming languages are you familiar with?</li>
-            <li>What do you hope you can do on Monday?</li>
-          </ul>
-          </div>
-        </section>
-
       <section>
         <h3>What will you need?</h3>
-        <p>You will need a text editor and a browser. </p><img class="full" src="../images/browser-text-editor.png"/>
+        <p class="fragment">You will need a text editor and a browser. </p><img class="full fragment" src="../images/browser-text-editor.png"/>
       </section>
 
       <section>
@@ -79,7 +52,7 @@
       </section>
 
       <section class="title-slide">
-        <h3>First Let's review the basics</h1>
+        <h3>First Let's review the basics</h3>
         <h4>Programming Fundamentals</h4>
       </section>
 
@@ -97,7 +70,7 @@
       </section>
 
       <section class="title-slide">
-        <h3>JavaScript Reivew</h1>
+        <h3>JavaScript Reivew</h3>
         <h4>Language Keywords</h4>
       </section>
 
@@ -204,7 +177,7 @@
       </section>
 
       <section class="title-slide">
-        <h3>JavaScript Review</h1>
+        <h3>JavaScript Review</h3>
         <h4>A few more things to know</h4>
       </section>
 
@@ -221,7 +194,14 @@
 
       <section>
         <h3>The Script Tag</h3>
-        <p>JavaScript is loaded into the HTML page via the script tag.</p>
+        <p class="fragment">JavaScript is loaded into the HTML page via the script tag.</p>
+        <h4 class="fragment">Internally</h4>
+        <pre>
+          <code class="fragment">
+window.confirm('Do you like JavaScript?');
+          </code>
+        </pre>
+        <h4 class="fragment">Externally</h4>
         <pre>
           <code class="fragment">
 &lt;script src="js/main.js"&gt;&lt;/script&gt;
@@ -241,7 +221,7 @@
       </section>
 
       <section class="title-slide">
-        <h3>HTML + CSS + JS Roles</h1>
+        <h3>HTML + CSS + JS Roles</h3>
         <h4>The Players and their roles</h4>
       </section>
 
@@ -252,34 +232,48 @@
           <li class="fragment">CSS is for presentation</li>
           <li class="fragment">JavaScript is for controlling the browser; most often HTML and CSS</li>
         </ul>
+        <h4 class="fragment">Spoiler alert! This will be very important later.</h4>
       </section>
 
       <section class="title-slide blue">
-        <h3>Let's Develop It</h1>
+        <h3>Let's Develop It</h3>
         <h4>Let's put our memories to the test.</h4>
         <ul class="slide-bullets">
-          <li class="fragment">Basic HTML Page</li>
-          <li class="fragment">Basic CSS Document</li>
-          <li class="fragment">Basic JavaScript Document</li>
+          <li class="fragment">Basic HTML Page
+            <ul class="slide-bullets">
+              <li>Create a heading</li>
+              <li>Create a div</li>
+              <li>Give the div a class</li>
+            </ul>
+          </li>
+          <li class="fragment">Basic CSS Document
+            <ul class="slide-bullets">
+              <li>Make the div 100px tall and wide</li>
+              <li>Give the div a background color of #3d2b68</li>
+            </ul>
+          </li>
+          <li class="fragment">Basic JavaScript Document
+            <ul class="slide-bullets">
+              <li>on page load launch a confirm dialog box</li>
+            </ul>
+          </li>
           <li class="fragment">Connect them all together</li>
         </ul>
       </section>
 
       <section class="title-slide blue">
-        <h3>Let's Develop It</h1>
+        <h3>Let's Develop It</h3>
         <h4>Bonus Round</h4>
         <ul class="slide-bullets">
-          <li class="fragment">Basic button click</li>
-          <li class="fragment">Update a DOM element</li>
+          <li class="fragment">On confirm true change the div to green.</li>
+          <li class="fragment">On confirm false change the div to red.</li>
         </ul>
       </section>
 
       <section class="title-slide">
-        <h3>Web Development Tools</h1>
+        <h3>Web Development Tools</h3>
         <h4>Web Console</h4>
       </section>
-
-
 
       <section>
         <h3>Developer Tools</h3>
@@ -301,7 +295,7 @@
 
       <section>
         <h3>Get to Know Your Developer Tools</h3>
-        <p>It would be a good idea to spend some time learning more about your web developer tools because it can save you a lot of time debugging.</p>
+        <p>It would be a good idea to spend some time learning more about web developer tools with your favorite browser because it can save you a lot of time debugging.</p>
         <ul class="slide-bullets">
           <li><a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox Development Tools</a></li>
@@ -310,7 +304,7 @@
       </section>
 
       <section class="title-slide">
-        <h3>Arrays</h1>
+        <h3>Arrays</h3>
         <h4>Lists of information</h4>
       </section>
 
@@ -335,12 +329,13 @@ var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
 
       <section class="title-slide red">
         <h3>Wait... What are Properties and Methods?</h3>
-        <h4 class="fragment">They are the 2 of the 3 fundamental parts of Object Oriented Programming (OOP)</h4>
+        <h4 class="fragment">They are fundamental parts of Object Oriented Programming (OOP)</h4>
       </section>
 
       <section>
         <h3>OOP Basics</h3>
-        <p>Objects contain the following:</p>
+        <h4>There are 3 main parts</h4>
+        <p class="fragment">Objects contain the following:</p>
         <ul class="slide-bullets">
           <li class="fragment">properties</li>
             <ul class="slide-bullets">
@@ -356,7 +351,7 @@ var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
           </li>
           <li class="fragment">events
             <ul class="slide-bullets">
-              <li class="fragment">Like onclick</li>
+              <li class="fragment">Like click</li>
               <li class="fragment">which triggers when the event happens</li>
             </ul></li>
         </ul>
@@ -369,45 +364,47 @@ var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
       </section>
 
       <section>
-        <h3>Arrays</h1>
-        <h4>The Most Commonly User Properties Are</h4>
+        <h3>Arrays</h3>
+        <h4>The Most Commonly User Propertiey is</h4>
         <ul class="slide-bullets">
           <li class="fragment">.length</li>
         </ul>
+        <p class="fragment">It is very handy when looping</p>
       </section>
 
       <section>
-        <h3>Arrays</h1>
+        <h3>Arrays</h3>
         <h4>The Most Commonly User Methods Are</h4>
         <ul class="slide-bullets">
           <li class="fragment">.pop()</li>
           <li class="fragment">.push()</li>
           <li class="fragment">.shift()</li>
           <li class="fragment">.unshift()</li>
-          <li class="fragment">.slice()</li>
-          <li class="fragment">.splice()</li>
+          <li class="fragment">.slice() - this selects a range</li>
+          <li class="fragment">.splice() - this removes, or replaces</li>
           <li class="fragment">.sort()</li>
         </ul>
       </section>
 
       <section class="title-slide blue">
-        <h3>Let's Develop It</h1>
+        <h3>Let's Develop It</h3>
         <h4>Array</h4>
         <ul class="slide-bullets">
-          <li class="fragment">Create an array</li>
+          <li class="fragment">We are going to create an image carousel.</li>
         </ul>
       </section>
 
       <section class="title-slide blue">
-        <h3>Let's Develop It</h1>
+        <h3>Let's Develop It</h3>
         <h4>Bonus Round</h4>
         <ul class="slide-bullets">
           <li class="fragment">Create the logic for next and previous buttons</li>
+          <li class="fragment">Create logic to cycle the images around continuously</li>
         </ul>
       </section>
 
       <section class="title-slide blue">
-        <h3>Let's Develop It</h1>
+        <h3>Let's Develop It</h3>
         <h4>Double Bonus Round</h4>
         <ul class="slide-bullets">
           <li class="fragment">Load a random image every time the page loads</li>

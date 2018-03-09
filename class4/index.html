@@ -215,9 +215,9 @@ function alertContents() {
           <h3>Making sure the page has loaded is a good idea. Otherwise your DOM elements will be undefined</h3>
           <pre><code>
 (function() {
-window.addEventListener('onload', init, false);
+window.addEventListener('load', init, false);
 
-function onload(event)){
+function init(event)){
   // start application
 }
 })()  </pre></code>
