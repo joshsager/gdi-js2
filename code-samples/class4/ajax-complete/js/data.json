@@ -1,0 +1,21 @@
+{"music":[
+    {
+    "type" : "rock"
+    },
+    {
+    "type" : "blues"
+    },
+    {
+    "type" : "rap"
+    },
+    {
+    "type" : "classic rock"
+    },
+    {
+    "type" : "r & b"
+    },
+    {
+    "type" : "pop"
+    }
+  ]
+}

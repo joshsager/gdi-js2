@@ -1,0 +1,16 @@
+{"records":[
+    { "band":"Foo Fighters",
+      "albums":[
+      {
+        "name": "The Colour and The Shape",
+        "year": 1997,
+        "cover":"https://upload.wikimedia.org/wikipedia/en/0/0d/FooFighters-TheColourAndTheShape.jpg"
+      },
+      {
+        "name": "Concrete and Gold",
+        "year": 2017,
+        "cover":"https://upload.wikimedia.org/wikipedia/en/e/e5/Concrete_and_Gold_Foo_Fighters_album.jpg"
+      }
+      ]
+    }
+]}

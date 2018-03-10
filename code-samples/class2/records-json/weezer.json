@@ -1,0 +1,65 @@
+{"records":[
+    { "band":"Foo Fighters",
+      "albums":[
+      {
+        "name": "Blue",
+        "year": 1994,
+        "cover":"https://upload.wikimedia.org/wikipedia/en/7/70/Weezer_-_Blue_Album.png"
+      },
+      {
+        "name": "Pinkerton",
+        "year": 1996,
+        "cover":"https://upload.wikimedia.org/wikipedia/en/c/ca/Pinkerton_cover.jpg"
+      },
+      {
+        "name": "The Green Album",
+        "year": 2001,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/9/93/Weezer_-_Green_Album.png"
+      },
+      {
+        "name": "Maladroit",
+        "year": 2002,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/a/a6/Maladroitweezer.jpg"
+      },
+      {
+        "name": "Make Believe",
+        "year": 2005,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/7/71/MakeBelieve.jpg"
+      },
+      {
+        "name": "The Red Album",
+        "year": 2008,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/4/43/Weezerred2.jpg"
+      },
+      {
+        "name": "Raditude",
+        "year": 2009,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/9/95/Weezer-Raditude.jpg"
+      },
+      {
+        "name": "Hurley",
+        "year": 2010,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/6/64/Weezer-hurley-final.png"
+      },
+      {
+        "name": "Everything Will Be Alright in the End",
+        "year": 2014,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/3/32/Cover_of_Weezer%27s_album_Everything_Will_Be_Alright_in_the_End.jpg"
+      },
+      {
+        "name": "The White Album",
+        "year": 2016,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/d/d3/Cover_of_Weezer%27s_White_Album%2C2016.jpg"
+      },
+      {
+        "name": "Pacific Daydream",
+        "year": 2017,
+        "cover" : "https://upload.wikimedia.org/wikipedia/en/1/13/Weezer-pacific-daydream-album.jpg"
+      },
+      {
+        "name": "The Black Album",
+        "year": 2018
+      }
+      ]
+    }
+]}
