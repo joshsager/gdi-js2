@@ -44,13 +44,23 @@ function makeRequest(url) {
 
   function onButtonClick(event){
     var path = "js/weezer.json";
-    console.log("event.id", this.id)
-    if(this.id == "weezer_btn"){
+
+    switch(){
+      case: "weezer_btn"
       path = "js/weezer.json";
-    }else if(this.id == "foo_fighters_btn"){
+      break;
+
+      case: "foo_fighters_btn"
       path = "js/foo_fighters.json";
-    }else if(this.id == "black_keys_btn"){
+      break;
+
+      case: "black_keys_btn"
+      path = "js/weezer.json";
+      break;
+
+      default:
       path = "js/the_black_keys.json";
+
     }
 
     makeRequest(path);

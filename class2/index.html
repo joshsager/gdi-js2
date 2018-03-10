@@ -41,8 +41,7 @@
             <li class="fragment">Object Creation</li>
             <li class="fragment">JSON and XML</li>
             <li class="fragment">Data Models</li>
-            <li class="fragment">Object Methods</li>
-            <li class="fragment">Putting JSON on Screen</li>
+            <li class="fragment">Putting Data on Screen</li>
           </ul>
         </section>
 
@@ -58,11 +57,12 @@
 
         <section class="title-slide">
           <h3>Introduction to Objects</h3>
-          <h4>They have been around us the entire time</h4>
+          <h4 class="fragment">They have been around us the entire time</h4>
         </section>
 
         <section>
-          <h3>Object Oriented Programming Re-Introduction</h3>
+          <h3>Object Oriented Programming</h3>
+          <h4>Re-Introduction</h4>
             <ul class="slide-bullets">
               <li class="fragment">Objects - <span class="fragment">Fancy name for the thing</span></li>
               <li class="fragment">Methods - <span class="fragment">Fancy name for a function</span></li>
@@ -73,7 +73,22 @@
 
         <section>
           <h3>Built-In JavaScript Objects</h3>
-          <p>Here is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" target="_blank">full list</a> of objects in Javascript.</p>
+          <h4 class="fragment">Here is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" target="_blank">full list</a> of objects in Javascript.</h4>
+          <p class="fragment">Just like the Array object, other built in objects have properties, methods, and some have events.</p>
+        </section>
+
+        <section>
+          <h3>There are so many!</h3>
+          <h4 class="fragment">What Should You Learn?</h4>
+          <p class="fragment">If you know these objecs you will get pretty far.</p>
+          <ul class="slide-bullets">
+            <li class="fragment">Document</li>
+            <li class="fragment">Arrays</li>
+            <li class="fragment">String</li>
+            <li class="fragment">Number</li>
+            <li class="fragment">Math</li>
+          </ul>
+          <h4 class="fragment">Every developer has their own short list, that's what makes it awesome!</h4>
         </section>
 
         <section>
@@ -88,14 +103,14 @@
 
         <section class="title-slide">
           <h3>Object Creation</h3>
-          <h4>Let's create our very own object</h4>
+          <h4 class="fragment">Let's create our very own object</h4>
         </section>
 
         <section>
           <h3>Objects</h3>
-          <p>Objects let us store a collection of properties.</p>
-          <p class="fragment red">As you can see they are really easy to create.</p>
-          <pre><code>
+          <h4 class="fragment">Objects let us store a collection of properties.</h4>
+          <p class="fragment">They are really easy to create.</p>
+          <pre><code  class="fragment">
 var about_me = {
 hometown: 'Nitro, WV',
 hair: 'Brown',
@@ -103,6 +118,23 @@ likes: ['knitting', 'code', 'music', 'woodworking','screen printing'],
 birthday: {month: 3, day: 3},
 };
           </code></pre>
+        </section>
+
+        <section class="title-slide red">
+          <h3>Mind Your Brackets!</h3>
+          <h4 class="fragment">It's easy to lose track of a curly or square bracket.</h4>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Develop It</h3>
+          <h4>Create an Object abour yourself</h4>
+          <p class="fragment">What should it include?</p>
+          <p  class="fragment">That can be up to you but maybe things like:</p>
+          <ul class="slide-bullets">
+            <li class="fragment">hometown</li>
+            <li class="fragment">hobbies</li>
+            <li class="fragment">favorite Beatle</li>
+          </ul>
         </section>
 
         <section>
@@ -145,9 +177,19 @@ about_me.hair = 'blue';
           </code></pre>
         </section>
 
+        <section class="title-slide blue">
+          <h3>Let's Look At It</h3>
+          <h4 class="fragment">Open up your developer tools console</h4>
+          <ul class="slide-bullets">
+            <li class="fragment">Using dot notation access a value from your object</li>
+            <li class="fragment">Using dot notation change a value from your object</li>
+          </ul>
+        </section>
+
         <section class="title-slide red">
           <h3>CRAZY ALERT!!!</h3>
-          <h4>Objects can have arrays. And arrays can have objects.</h4>
+          <h4><span class="fragment">Objects can have arrays. </span><span class="fragment">And arrays can have objects.</span></h4>
+          <img class="fragment" src="https://media.giphy.com/media/kGCuRgmbnO9EI/giphy.gif" />
         </section>
 
         <section>
@@ -172,6 +214,11 @@ for (var i = 0; i &lt; my_albums.length; i++) {
         </code></pre>
       </section>
 
+      <section class="title-slide red">
+        <h3>But why?</h3>
+        <h4 class="fragment">Sometimes our lists have lists</h4>
+      </section>
+
       <section>
         <h3>Placeholder for mind blown gif</h3>
         <p class="fragment">Just kidding I have one</p>
@@ -182,10 +229,17 @@ for (var i = 0; i &lt; my_albums.length; i++) {
         <h3>Let's Develop It</h3>
         <h4>Let's try it ourselves.</h4>
         <ul class="slide-bullets">
-          <li class="fragment">Create an object with your 5 favorite movies</li>
-          <li class="fragment">Include the movie title, year, and director</li>
+          <li class="fragment">Create an object with your 5 movies.</li>
+          <li class="fragment">Make sure the movies are in an array.</li>
+          <li class="fragment">Include the movie title, year, and director.</li>
           <li class="fragment">Loop through the results and display it in the console.</li>
         </ul>
+      </section>
+
+      <section class="title-slide blue">
+        <h3>Let's Hack It</h3>
+        <h4 class="fragment">Open you development tools and your console.</h4>
+        <p class="fragment">Copy and paste your JavaScript into your console.</p>
       </section>
 
       <section>
@@ -208,6 +262,28 @@ describePerson(about_me);
           </code></pre>
         </section>
 
+        <section class="title-slide blue">
+          <h3>Let's Mad Lib It</h3>
+          <h4 class="fragment">Build a sentence from your object values.</h4>
+          <ul class="slide-bullets">
+            <li class="fragment">Create function with your mad lib sentence.</li>
+            <li class="fragment">use console.log()</li>
+            <li class="fragment">Pass the object as an argument</li>
+            <li class="fragment">Copy and paste your JavaScript into your console.</li>
+          </ul>
+        </section>
+
+        <section class="title-slide red">
+          <h3>That wasn't too bad</h3>
+          <h4 class="fragment">And kind of fun</h4>
+          <img class="fragment" src="https://media.giphy.com/media/YVPkjfe2E0XAs/giphy.gif" />
+        </section>
+
+        <section class="title-slide red">
+          <h3>Secret</h3>
+          <h4 class="fragment">Web Programming is really mad libbing.</h4>
+        </section>
+
         <section>
           <h3>Let's get some perspective</h3>
           <p>Objects are very much like an arrays, but instead of indexes you can create name/value pairs<p>
@@ -224,6 +300,20 @@ describePerson(about_me);
             <h4 class="fragment">Array</h4>
             <pre><code class="fragment">
   var about_me = ['Nitro, WV','Brown','knitting','March 3', 39]
+            </code></pre>
+        </section>
+
+        <section>
+          <h3>They are interchangeable.</h3>
+            <h4 class="fragment">Objects and Arrays</h4>
+            <pre><code class="fragment">
+  var about_me = {
+  has_lived: ['Nitro, WV','Pittsburgh, PA'],
+  hair: 'Brown',
+  likes: [{'favthing':'Reading to Ellie'},{'favthing':'Sanp Circuits with Ellie'}],
+  birthday: {month: 3, day: 3},
+  age: 39
+  };
             </code></pre>
         </section>
 
@@ -326,7 +416,7 @@ describePerson(about_me);
         The Blue Album
       &lt;/name&gt;
       &lt;year&gt;
-        1984
+        1994
       &lt;/year&gt;
     &lt;/album&gt;
   &lt;/band&gt;
@@ -341,12 +431,8 @@ describePerson(about_me);
 
         <section class="title-slide blue">
           <h3>Let's Develop It</h3>
-          <h4>Create a JSON object of 3 of your favorite bands.</h4>
-        </section>
-
-        <section class="title-slide blue">
-          <h3>Let's Develop It</h3>
-          <h4>BONUS ROUND - Same but xml Create a JSON object of 3 of your favorite bands.</h4>
+          <h4>Bonus Round</h4>
+          <h4>Create a XML object of 3 of your favorite bands.</h4>
         </section>
 
         <section>
@@ -364,6 +450,7 @@ describePerson(about_me);
   ... place your object here
 ]}
           </pre></code>
+          <h4 class="fragment">Also take note, Arryays and objects together.</h4>
         </section>
 
         <section>
@@ -401,8 +488,9 @@ describePerson(about_me);
         </section>
 
         <section>
-          <h3>Yep that's right!</h3>
-          <img class="fragment" src="http://www.reactiongifs.com/wp-content/uploads/2013/10/woah.gif" />
+          <h3>Objects and Array's Together</h3>
+          <h4 class="fragment">And they are so happy.</h4>
+          <img class="fragment" src="https://78.media.tumblr.com/ea404132f57e9f0eae6febb85eb209c2/tumblr_op8j3f5NfP1w29frfo1_400.gif" />
         </section>
 
         <section class="title-slide blue">
@@ -413,86 +501,73 @@ describePerson(about_me);
 
         <section class="title-slide red">
           <h3>HOLD ON!!! Is this a trick?</h3>
-          <p class="fragment">You don't need to update anything, becuase you've already been using JSON this entire time.</p>
+          <p class="fragment">You don't need to update anything.</p>
+          <p class="fragment">You already know JSON, it's just an obect.</p>
+          <img class="fragment" src="https://www.viralviralvideos.com/wp-content/uploads/2017/06/GIF-what-Steve-Carell-The-Office-GIF.gif"/>
         </section>
 
-        <section>
-          <h3>Sorry this is just sooooo relevant</h3>
-          <img class="fragment" src="http://www.reactiongifs.com/wp-content/uploads/2013/10/woah.gif" />
+        <section class="title-slide">
+          <h3>Templating - Part 1</h3>
+          <h4 class="fragment">Putting a little bit of data on screen.</h4>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Create our HTML</h3>
+          <h4 class="fragment">This is a placeholder that will be replaced by our data</h4>
+          <pre><code class="fragment">
+&lt;body onload="hardway()"&gt;
+  &lt;section id="albums"&gt;
+    ... loading
+  &lt;/section&gt;
+          </pre></code>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Update the HTML</h3>
+          <h4 class="fragment">We want to replace it with data from JSON</h4>
+          <pre class="fragment"><code>
+function hardway(){
+  document.getElementById("albums").innerHTML = "&lt;h1&gt;Bands&lt;/h1&gt;";
+}
+
+          </pre></code>
         </section>
 
         <section class="title-slide">
           <h3>Data Models</h3>
-          <h4><a href="https://en.wikipedia.org/wiki/Data_model" target="_blank">Data models</a> are ways to organize and sometimes standarize data.</h4>
+          <h4 class="fragment"><a href="https://en.wikipedia.org/wiki/Data_model" target="_blank">Data models</a> give standard organization to data.</h4>
           <p class="fragment white">The most important considerations are flexibility and consitency.</p>
         </section>
 
         <section class="title-slide blue">
           <h3>Let's Inspect It</h3>
-          <h4>Let's take a look at an existing data model for inspiration.</h4>
+          <h4 class="fragment">Let's take a look at an existing data model for inspiration.</h4>
           <p class="fragment"><a href="https://help.shopify.com/api/reference/order/" target="_blank">Shopify Order API</a></p>
         </section>
 
         <section class="title-slide blue">
           <h3>Let's Sketch It</h3>
-          <h4>Let's sketch out a few data models.</h4>
-          <p class="fragment">Books, Movies, Music, etc</p>
-          <p class="fragment">Do you have any suggestions?</p>
-        </section>
-
-        <section class="title-slide">
-          <h3>Object Methods</h3>
-          <h4>When objects do things</h4>
-        </section>
-
-        <section>
-          <h3>Object methods</h3>
-          <h4 class="fragment">Objects can also hold functions.</h4>
-          <pre><code class="fragment">
-var sager = {
-age: 39,
-eyes: 'hazil',
-talk: function() {
-  console.log('nerd stuff');
-},
-eat: function(food) {
-  console.log('Yum, I love ' + food);
-}
-};
-          </code></pre>
-          <h4 class="fragment">Call object methods using dot notation:</h4>
-          <pre><code class="fragment">
-sager.talk();
-sager.eat('Kale');
-          </code></pre>
-        </section>
-
-        <section>
-          <h3>Object Methods are very convenient</h3>
-          <h4 class="fragment">And you use them ALL the time.</h4>
-          <ul class="slide-bullets">
-            <li class="fragment">console.log() - <span class="fragment">Object Method</span></li>
-            <li class="fragment">document.getElementById() - <span class="fragment">Object Method</span></li>
-            <li class="fragment">window.confirm() - <span class="fragment">Object Method</span></li>
-          </ul>
-        </section>
-
-        <section class="title-slide">
-          <h3>Putting a lot of JSON on Screen</h3>
-          <h4>It's time to use object data and methods to update a HTML page.</h4>
+          <h4 class="fragment">Let's sketch out a data models for a band.</h4>
+          <p class="fragment">What data should we have?</p>
+          <p class="fragment">How should it be organized?</p>
         </section>
 
         <section class="title-slide blue">
           <h3>Let's Develop It</h3>
           <h4>Create a data model using JSON</h4>
           <ul class="slide-bullets">
-            <li class="fragment">Model it after my example</span></li>
+            <li class="fragment">Model it after my example for albums from a band.</span></li>
             <li class="fragment">Fill it in with information form your favorite band, or you can use what I have provided.</li>
           </ul>
         </section>
 
+        <section class="title-slide">
+          <h3>Templating - Part 2</h3>
+          <h4 class="fragment">Putting a lot of Data on Screen</h4>
+        </section>
+
         <section class="title-slide blue">
-          <h3>Let's Create our HTML</h3>
+          <h3>Let's Review our HTML</h3>
           <h4>This is a placeholder that will be replaced by JSON</h4>
           <pre><code>
 &lt;body onload="hardway()"&gt;
@@ -510,13 +585,13 @@ function hardway(){
   document.getElementById("albums").innerHTML = data;
 }
           </pre></code>
-          <h4 class="fragment">Maybe this...</h4>
+          <h4 class="fragment">Try this...</h4>
           <pre class="fragment"><code>
 function hardway(){
   document.getElementById("albums").innerHTML = data.records;
 }
           </pre></code>
-          <h4 class="fragment">Or this...</h4>
+          <h4 class="fragment">Now try this...</h4>
           <pre class="fragment"><code>
 function hardway(){
   document.getElementById("albums").innerHTML = data.records[0].band;
@@ -534,7 +609,6 @@ function hardway(){
           <h4 class="fragment">Loop through JSON and construct the HTML</h4>
           <pre><code class="fragment">
 function hardway(){
-  var template = document.getElementById("albumstpl").innerHTML;
   var rendered = "";
   for(var i=0; i&lt;data.records.length; i++){
     rendered += "&lt;h2&gt;"+data.records[i].band+"&lt;/h2&gt;"
@@ -551,6 +625,7 @@ function hardway(){
 
         <section class="title-slide red">
           <h3>That was awful!</h3>
+          <img class="fragment" src="https://78.media.tumblr.com/86239339ffd83cb72e04bf0678b695b8/tumblr_ngebhuAt8d1qjgyvoo1_500.gif" />
           <h4 class="fragment">There has to be a better way!</h4>
           <p class="fragment">There is. It's called templating.</p>
           <p class="fragment">Cliffhanger for the next class.</p>
@@ -563,8 +638,7 @@ function hardway(){
             <li class="fragment">Object Creation</li>
             <li class="fragment">JSON and XML</li>
             <li class="fragment">Data Models</li>
-            <li class="fragment">Object Methods</li>
-            <li class="fragment">Putting JSON on Screen <span class="fragment">- the hard way</span></li>
+            <li class="fragment">Putting Data on Screen <span class="fragment">- the hard way</span></li>
           </ul>
         </section>
 

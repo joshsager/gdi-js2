@@ -1,4 +1,4 @@
-<!doctype html>
+</h3><!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -37,6 +37,7 @@
         <section>
           <h3>You will learn about</h3>
           <ul class="slide-bullets">
+            <li class="fragment">Object Methods</li>
             <li class="fragment">Introduction to programming patterns</li>
             <li class="fragment">Introduction to MVC</li>
             <li class="fragment">Introduction to templating</li>
@@ -53,9 +54,58 @@
           <p class="fragment">These <a href="../code-samples.zip" target="_blank">source code files</a>.</p>
         </section>
 
+        <section class="title-slide">
+          <h3>Object Methods</h3>
+          <h4>When objects do things</h4>
+        </section>
+
+        <section>
+          <h3>Object methods</h3>
+          <h4 class="fragment">Objects can also hold functions.</h4>
+          <pre><code class="fragment">
+var sager = {
+age: 39,
+eyes: 'hazil',
+talk: function() {
+  console.log('nerd stuff');
+},
+eat: function(food) {
+  console.log('Yum, I love ' + food);
+}
+};
+          </code></pre>
+          <h4 class="fragment">Call object methods using dot notation:</h4>
+          <pre><code class="fragment">
+sager.talk();
+sager.eat('Kale');
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Object Methods are very convenient</h3>
+          <h4 class="fragment">And you use them ALL the time.</h4>
+          <ul class="slide-bullets">
+            <li class="fragment">console.log() - <span class="fragment">Object Method</span></li>
+            <li class="fragment">document.getElementById() - <span class="fragment">Object Method</span></li>
+            <li class="fragment">window.confirm() - <span class="fragment">Object Method</span></li>
+          </ul>
+        </section>
+
+        <section class="title-slide blue">
+          <h3>Let's Develop It</h3>
+          <h4 class="fragment">Create an object method for our mad lib from yesterday.</h4>
+        </section>
+
+        <section class="title-slide red">
+          <h3>Remember Templating the hard way?</h3>
+          <h4 class="fragment">There has to be a better way!</h4>
+          <p class="fragment">There is. It's called templating.</p>
+          <img class="fragment" src="https://78.media.tumblr.com/86239339ffd83cb72e04bf0678b695b8/tumblr_ngebhuAt8d1qjgyvoo1_500.gif" />
+        </section>
+
         <section>
           <h3>Templating the hard way - Review</h3>
-          <p>Although this approach works on a technical level. It's not a good practice. It's better in the long run to separate the presentation from the logic.</p>
+          <p class="fragment">Although this approach works on a technical level. It's not a good practice. It's better in the long run to separate the presentation from the logic.</p>
         </section>
 
         <section>
@@ -70,7 +120,7 @@
         </section>
 
         <section class="title-slide red">
-          <h3>WHY DOES THIS MATTER?</h1>
+          <h3>WHY DOES THIS MATTER?</h3>
           <h4>Web templating, client side or server side, is a design pattern.</h4>
           <p class="fragment">That pattern is known as Model - View - Control (MVC)</p>
         </section>
@@ -93,7 +143,7 @@
         </section>
 
         <section class="title-slide red">
-          <h3>Alright. Where's the MVC button?</h1>
+          <h3>Alright. Where's the MVC button?</h3>
           <h4>It's not like that. You now have some choices.</h4>
           <ul class="slide-bullets">
             <li class="fragment">Patterns smatterns. You do you. And deal with whatever happens.</li>
@@ -103,7 +153,7 @@
         </section>
 
         <section class="title-slide red">
-          <h3>UGGG! This is hard. Why is this important again?</h1>
+          <h3>UGGG! This is hard. Why is this important again?</h3>
           <h4>There are some very compelling reasons</h4>
           <ul class="slide-bullets">
             <li class="fragment">Future edits will be much easier and will save you time and brain power in the future</li>
@@ -122,7 +172,7 @@
         </section>
 
         <section>
-          <h3>What are my options?</h1>
+          <h3>What are my options?</h3>
           <h4>Here's a <a href="https://en.wikipedia.org/wiki/Comparison_of_web_frameworks#JavaScript" target="_blank">list of options.</a></h4>
           <h4 class="fragment">But it is not exhaustive. New frameworks pop up every day.</h4>
           <p class="fragment">One more thing...</p>
@@ -180,7 +230,7 @@
         </section>
 
         <section class="title-slide blue">
-          <h3>Let's Use It</h1>
+          <h3>Let's Use It</h3>
           <h4>Load in mustache via a CDN</h4>
         </section>
 
@@ -259,7 +309,7 @@ function loadApplication(){
         </section>
 
         <section class="title-slide blue">
-          <h3>Let's Develop It</h1>
+          <h3>Let's Develop It</h3>
           <h4>Templating for JSON Data</h4>
           <ul class="slide-bullets">
             <li class="fragment">Load in JSON data</li>
@@ -269,7 +319,7 @@ function loadApplication(){
         </section>
 
         <section class="title-slide blue">
-          <h3>Let's Develop It</h1>
+          <h3>Let's Develop It</h3>
           <h4>Bonus Round</h4>
           <p class="fragment">Add in track lists for one album</p>
         </section>
