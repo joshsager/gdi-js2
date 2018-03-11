@@ -82,7 +82,7 @@ sager.eat('Kale');
         </section>
 
         <section>
-          <h3>Object Methods are very convenient</h3>
+          <h3>Your Object Methods are the Same as Built-In</h3>
           <h4 class="fragment">And you use them ALL the time.</h4>
           <ul class="slide-bullets">
             <li class="fragment">console.log() - <span class="fragment">Object Method</span></li>
@@ -92,14 +92,29 @@ sager.eat('Kale');
         </section>
 
         <section class="title-slide blue">
-          <h3>Let's Develop It</h3>
+          <h3>Let's Warm Up It</h3>
           <h4 class="fragment">Create an object with 1 noun, 1 verb, 1 adjective</h4>
-          <h4 class="fragment">Create a method object with a mad lip that outputs to the console.</h4>
+          <ul class="slide-bullets">
+            <li class="fragment">Create a method object with a mad lib.</li>
+            <li class="fragment">Output your mad lib to the console.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Methods and Properties are Covered</h3>
+          <h4 class="fragment">We are Just as advanced as the array object!</h4>
+          <p class="fragment">What about custom events?</p>
+          <p class="fragment">You can create those as well. Learn how <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events" target="_blank">here</a>.</p>
+        </section>
+
+        <section class="title-slide">
+          <h3>Templating</h3>
+          <h4 class="fragment">A Review</h4>
         </section>
 
         <section class="title-slide red">
           <h3>Let's Review our HTML Templating Example</h3>
-          <h4>This is a placeholder that will be replaced by JSON</h4>
+          <h4>This is a placeholder that will be replaced with data</h4>
           <pre><code>
 &lt;body onload="hardway()"&gt;
   &lt;section id="albums"&gt;
@@ -109,7 +124,7 @@ sager.eat('Kale');
         </section>
 
         <section class="title-slide red">
-          <h3>Let's Update the HTML</h3>
+          <h3>Update the HTML</h3>
           <h4 class="fragment">Loop through JSON and construct the HTML</h4>
           <pre><code class="fragment">
 function hardway(){
@@ -130,19 +145,23 @@ function hardway(){
         <section class="title-slide red">
           <h3>Remember Templating the hard way?</h3>
           <h4 class="fragment">There has to be a better way!</h4>
-          <p class="fragment">There is. It's called templating.</p>
           <img class="fragment" src="https://78.media.tumblr.com/86239339ffd83cb72e04bf0678b695b8/tumblr_ngebhuAt8d1qjgyvoo1_500.gif" />
         </section>
 
         <section>
           <h3>Templating the hard way</h3>
-          <p class="fragment">Although this approach works on a technical level. It's not a good practice. It's better in the long run to separate the presentation from the logic.</p>
+          <p class="fragment">Although this approach works on a technical level. <span class="fragment">Some people think that it's not a good practice.</span> <span class="fragment">It's recommended to separate the presentation from the logic.</span></p>
+        </section>
+
+        <section class="title-slide">
+          <h3>Programming Patterns</h3>
+          <h4 class="fragment">Let's chat about Programming patterns</h4>
         </section>
 
         <section>
           <h3>Programming Patterns</h3>
           <p class="fragment">There are programming design patterns that have been identified,
-            studied, and implemented since the dawn of interface design.</p>
+            studied, and implemented since the dawn of programming.</p>
           <h4 class="fragment">You can read more about them here.</h4>
             <ul class="slide-bullets">
               <li class="fragment"><a href="https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8" target="_blank">Design Patterns: Elements of Reusable Object-Oriented Software</a> - Aslo known as the gang of 4</li>
@@ -152,7 +171,7 @@ function hardway(){
 
         <section class="title-slide red">
           <h3>WHY DOES THIS MATTER?</h3>
-          <h4>Web templating, client side or server side, is a design pattern.</h4>
+          <h4 class="fragment">Web templating follows a pattern.</h4>
           <p class="fragment">That pattern is known as Model - View - Control (MVC)</p>
         </section>
 
@@ -175,7 +194,7 @@ function hardway(){
 
         <section class="title-slide red">
           <h3>Alright. Where's the MVC button?</h3>
-          <h4>It's not like that. You now have some choices.</h4>
+          <h4 class="fragment">It's not like that. As with everything you have choices.</h4>
           <ul class="slide-bullets">
             <li class="fragment">Patterns smatterns. You do you. And deal with whatever happens.</li>
             <li class="fragment">You create your own system that follows the MVC pattern.</li>
@@ -184,6 +203,11 @@ function hardway(){
         </section>
 
         <section class="title-slide red">
+          <h3>If MVC is soooo Important...</h3>
+          <h4 class="fragment">...why isn't it just part of JavaScript?</h4>
+        </section>
+
+        <!-- <section class="title-slide red">
           <h3>UGGG! This is hard. Why is this important again?</h3>
           <h4>There are some very compelling reasons</h4>
           <ul class="slide-bullets">
@@ -192,14 +216,14 @@ function hardway(){
             <li class="fragment">An agreed on pattern allows more people to work on the same thing</li>
           </ul>
           <h4 class="fragment" style="border-top:thick solid ; padding-top:1em;">Bottom line: it saves time</h4>
-        </section>
+        </section> -->
 
         <section>
           <h3>Programming Languages vs Frameworks</h3>
           <h4 class="fragment">Programming Languages:</h4>
-          <p class="fragment">Languages are designed to be flexibile so that you can do virtually anything you want. But the catch is that you're responsible for making it happen.</p>
+          <p class="fragment">Languages are designed to be flexibile so that you can do virtually anything you want. <span class="fragment">But the catch is that you're responsible for making it happen.</span></p>
           <h4 class="fragment">Frameworks:</h4>
-          <p class="fragment">Frameworks are more like kits. There are lots of parts, instructions for intended use, it's limited by design, and solves focused set of problems.</p>
+          <p class="fragment">Frameworks are more like kits. There are lots of parts, instructions for intended use, it's limited by design, and solves a focused set of problems.</p>
         </section>
 
         <section>
@@ -222,7 +246,7 @@ function hardway(){
 
         <section class="title-slide">
           <h3>Templating</h3>
-          <h4>The View in MVC</h4>
+          <h4 class="fragment">The View in MVC</h4>
         </section>
 
         <section>
@@ -248,7 +272,7 @@ function hardway(){
             <li class="fragment">Angular</li>
             <li class="fragment">Jekyll</li>
             <li class="fragment">Vue</li>
-            <li class="fragment">React - <span class="fragment">But there's an different apprach</span></li>
+            <li class="fragment">React</li>
 
           </ul>
         </section>
@@ -264,7 +288,7 @@ function hardway(){
 
         <section class="title-slide blue">
           <h3>Let's Use It</h3>
-          <h4>Load in mustache via a CDN</h4>
+          <h4 class="fragment">Load in mustache via a CDN</h4>
         </section>
 
         <section>
@@ -385,10 +409,7 @@ function loadApplication(){
             <li class="fragment"><a href="https://www.youtube.com/watch?v=xIJuDcA6YBo" target="_blank">Learning Mustache Templating</a></li>
           </ul>
         </section>
-
-
-
-
+        
       </div>
       <footer>
         <div class="copyright">

@@ -61,10 +61,17 @@
           <p class="fragment">We will need a local server.</p>
         </section>
 
+        <section>
+          <h3>Want to see a cool trick?</h3>
+          <p class="fragment">We can start a server with python</p>
+          <pre><code class="fragment">
+python -m SimpleHTTPServer
+          </pre></code>
+        </section>
 
         <section class="title-slide">
           <h3>AJAX</h3>
-          <h4>A new world for the web</h4>
+          <h4 class="fragment">A new world for the web</h4>
         </section>
 
         <section>
@@ -80,17 +87,17 @@
 
         <section class="title-slide red">
           <h3>Ummm So What does that mean?</h3>
-          <h4>You can update one section of <a href="https://www.w3schools.com/xml/tryit.asp?filename=tryajax_first" target="_blank">web page without refreshing</a>.</h4>
+          <h4 class="fragment">You can update one section of <a href="https://www.w3schools.com/xml/tryit.asp?filename=tryajax_first" target="_blank">web page without refreshing</a>.</h4>
         </section>
 
         <section class="title-slide red">
           <h3>2005 was a long time ago...</h3>
-          <h4>Does anybody use that anymore?</h4>
+          <h4 class="fragment">Does anybody use that anymore?</h4>
         </section>
 
         <section>
           <h3>AJAX is EVERYWHERE</h3>
-          <p class="fragment">AJAX is responsible for twitter, facebook, google type ahead search, basecamp, gmail, invision, the list goes on... and on...</p>
+          <p class="fragment">AJAX is being used for twitter, facebook, google type ahead search, basecamp, gmail, invision, the list goes on... and on...</p>
           <p class="fragment">Some might even say that modern day Silicon Valley start ups are built on AJAX.</p>
         </section>
 
@@ -106,8 +113,8 @@
 
         <section>
           <h3>AJAX Example</h3>
-          <h4>MDN has a really good <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started" target="_blank">AJAX example</a></h4>
-          <pre><code style="font-size:.4em">
+          <h4 class="fragment">MDN has a really good <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started" target="_blank">AJAX example</a></h4>
+          <pre><code style="font-size:.4em"  class="fragment">
   var httpRequest;
   function makeRequest() {
       httpRequest = new XMLHttpRequest();
@@ -154,8 +161,8 @@ function alertContents() {
 
         <section class="title-slide blue">
           <h3>Let's Develop It</h3>
-          <h4>Load JSON Files</h4>
-          <p class="fragment">Let's try and load in a JSON file from code</p>
+          <h4>It's Time for AJAX</h4>
+          <p class="fragment">Create an ajax request for a JSON file</p>
         </section>
 
         <section class="title-slide blue">
@@ -180,21 +187,24 @@ function alertContents() {
           <h3>JSON From Other Places</h3>
           <h4 class="fragment">This Can get crazy</h4>
           <p class="fragment">Basically you change the path of the request to use an external url.</p>
-          <p class="fragment">There are some new condierations.</p>
+          <p class="fragment">There are some new considerations.</p>
         </section>
 
         <section class="title-slide red">
           <h3>Cross Origin Resource Sharing (CORS)</h3>
-          <h4>Beware - Not everything is wideo open</h4>
+          <h4>Beware - Not everything is wide open</h4>
           <p class="fragment">Typically <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">CORS</a> will prevent you from loading a resource</p>
           <p class="fragment">Open up this <a href="https://api.meetup.com/2/cities" target="_blank">list of cities with meetup groups</a> in your browser.</p>
-          <p class="fragment">Now try it in your application. Your hand will get slapped because you are not allowed.</p>
+          <p class="fragment">Now try it in your application. You will not be allowed.</p>
         </section>
 
         <section class="title-slide blue">
           <h3>Let's Develop It</h3>
-          <h4>Load JSON Files From Other Places</h4>
+          <h4 class="fragment">Load JSON Files From Other Places</h4>
           <p class="fragment">Using this path <a href="https://developer.yahoo.com/weather/" target="_blank">https://developer.yahoo.com/weather/</a></p>
+          <p class="fragment">Load in the data</p>
+          <p class="fragment">Parse the data</p>
+          <p class="fragment">Display the data</p>
         </section>
 
         <!-- <section>
@@ -257,11 +267,6 @@ function alertContents() {
           </ul>
         </section> -->
 
-        <section class="title-slide">
-          <h3>Coming down the home stretch</h3>
-            <h4 class="fragment">Loading JSON from other places</h4>
-        </section>
-
         <section>
           <h3>There are many resources to do allow CORS</h3>
           <h4>Here's a short list of API's</h4>
@@ -274,7 +279,7 @@ function alertContents() {
           </ul>
         </section>
 
-        <section class="title-slide red">
+        <section>
           <h3>TRY IT OUT! </h3>
             <h4 class="fragment">In many cases You will need to register</h4>
           <h4 class="fragment">You will get an API key</h4>
@@ -284,12 +289,12 @@ function alertContents() {
 
         <section class="title-slide">
           <h3>Application Programming Interface (API) and endpoints</h3>
-          <h4>The Modern Way. How does it work?</h4>
+          <h4 class="fragment">The Modern Way. How does it work?</h4>
         </section>
 
         <section>
           <h3>API's and endpoints</h3>
-          <p>Let's talk about <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods" target="_blank">Request</a> / <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank">Response</a> </p>
+          <p>Let's talk about <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods" target="_blank">Request</a> / <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank">Response</a> and Routing.</p>
         </section>
 
         <section class="title-slide blue">
@@ -305,7 +310,7 @@ function alertContents() {
           </ul>
         </section>
 
-        <section class="title-slide red">
+        <section>
           <h3>The next Step is to experiment with API's</h3>
           <h4 class="fragment">There will be a lot of trial and error</h4>
           <ul class="slide-bullets">
@@ -316,18 +321,23 @@ function alertContents() {
           </ul>
         </section>
 
-        <section class="title-slide blue">
+        <section>
           <h3>Go out a make something!</h3>
-          <h4>Like an earth <a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-76.93,29.82,1437" target="_blank">wind map</a></h4>
-        </section>
-
-        <section class="title-slide blue">
-          <h3>Housekeeping</h3>
-          <h4>Some things to keep in mind</h4>
+          <h4 class="fragment">Like an earth <a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-76.93,29.82,1437" target="_blank">wind map</a></h4>
         </section>
 
         <section>
-          <h3>You should start your <a href="https://stackoverflow.com/questions/592396/what-is-the-purpose-of-a-self-executing-function-in-javascript" target="_blank">JavaScript documents</a> link this</h3>
+          <h3>Want to see a neat trick?</h3>
+          <h4 class="fragment">We can look under the hood of the <a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-76.93,29.82,1437" target="_blank">wind map</a></h4>
+        </section>
+
+        <section class="title-slide">
+          <h3>Housekeeping</h3>
+          <h4 class="fragment">Some things to keep in mind</h4>
+        </section>
+
+        <section>
+          <h3>You should start your <a href="https://stackoverflow.com/questions/592396/what-is-the-purpose-of-a-self-executing-function-in-javascript" target="_blank">JavaScript</a> like this</h3>
           <pre><code>
 (function() {
 // JS CODE
@@ -335,7 +345,8 @@ function alertContents() {
         </section>
 
         <section>
-          <h3>Making sure the page has loaded is a good idea. Otherwise your DOM elements will be undefined</h3>
+          <h3>On Page Load</h3>
+          <h4>Making sure the page has loaded is a good idea. Otherwise your DOM elements will be undefined</h4>
           <pre><code>
 (function() {
 window.addEventListener('load', init);
@@ -347,7 +358,7 @@ function init(event)){
         </section>
 
         <section>
-          <h3><a href="https://www.w3schools.com/js/js_strict.asp" target="_blank">Use strict</a> is a good idea too.</h3>
+          <h3><a href="https://www.w3schools.com/js/js_strict.asp" target="_blank">Use strict</a> is a good idea too</h3>
           <pre><code>
 
 (function() {
@@ -362,12 +373,9 @@ function init(event)){
           <ul class="slide-bullets">
             <li class="fragment"><a href="http://jstherightway.org/#the-good-parts" target="_blank">JavaScript The Right Way</a></li>
             <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials" target="_blank">MDN Tutorials</a></li>
-            <li class="fragment"><a href="https://www.youtube.com/watch?v=7YcW25PHnAA" target="_blank">Video what API's are and how they work</a></li>
+            <li class="fragment"><a href="https://www.youtube.com/watch?v=7YcW25PHnAA" target="_blank">(Video) what API's are and how they work</a></li>
           </ul>
         </section>
-
-
-
 
         <section>
           <h3>Summary</h3>
@@ -382,7 +390,22 @@ function init(event)){
         </section>
 
         <section>
+          <h3>Final Thoughts</h3>
+            <ul class="slide-bullets">
+              <li class="fragment">You have choices.</li>
+              <li class="fragment">Everything old becomes new again.</li>
+              <li class="fragment">Beware of Framework fom<span class="red">a</span> <span class="fragment">(fear of missing aht).</span></li>
+              <li class="fragment">Frameworks are just power tools. <span class="fragment">There will always be <a href="https://github.com/christaclark/Js-Framework-Name-Generator" target="_blank">new frameworks</a>.</span> <span class="fragment">They make the job go faster, and in some cases more precise.</span> <span class="fragment">But the fundamentals never go away.</span></li>
+              <li class="fragment">Friends, mentors, coffee meetups, and projects are great ways to continue growing.</li>
+              <li class="fragment">So does making stuff. I get so inspired by the stories of people making things with limited resources.</li>
+            </ul>
+        </section>
+
+
+        <section>
           <h3>Thank you!</h3>
+          <p>sager@viable.io</p>
+          <p>@joshsager</p>
           <img src="https://media1.tenor.com/images/0f8a9abf556488c8fa0b327cec6b1a9f/tenor.gif" />
         </section>
 
