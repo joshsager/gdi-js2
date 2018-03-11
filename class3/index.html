@@ -93,7 +93,38 @@ sager.eat('Kale');
 
         <section class="title-slide blue">
           <h3>Let's Develop It</h3>
-          <h4 class="fragment">Create an object method for our mad lib from yesterday.</h4>
+          <h4 class="fragment">Create an object with 1 noun, 1 verb, 1 adjective</h4>
+          <h4 class="fragment">Create a method object with a mad lip that outputs to the console.</h4>
+        </section>
+
+        <section class="title-slide red">
+          <h3>Let's Review our HTML Templating Example</h3>
+          <h4>This is a placeholder that will be replaced by JSON</h4>
+          <pre><code>
+&lt;body onload="hardway()"&gt;
+  &lt;section id="albums"&gt;
+    ... loading
+  &lt;/section&gt;
+          </pre></code>
+        </section>
+
+        <section class="title-slide red">
+          <h3>Let's Update the HTML</h3>
+          <h4 class="fragment">Loop through JSON and construct the HTML</h4>
+          <pre><code class="fragment">
+function hardway(){
+  var rendered = "";
+  for(var i=0; i&lt;data.records.length; i++){
+    rendered += "&lt;h2&gt;"+data.records[i].band+"&lt;/h2&gt;"
+    for(var k=0; k&lt;data.records[i].albums.length; k++){
+      rendered += "Album Name: " +  data.records[i].albums[k].name + "&lt;br /&gt;";
+      rendered += "Album Year: " +  data.records[i].albums[k].year + "&lt;br /&gt;";
+      rendered += "&lt;br /&gt;";
+    }
+  }
+  document.getElementById("albums").innerHTML = rendered;
+}
+          </pre></code>
         </section>
 
         <section class="title-slide red">
@@ -104,7 +135,7 @@ sager.eat('Kale');
         </section>
 
         <section>
-          <h3>Templating the hard way - Review</h3>
+          <h3>Templating the hard way</h3>
           <p class="fragment">Although this approach works on a technical level. It's not a good practice. It's better in the long run to separate the presentation from the logic.</p>
         </section>
 
@@ -211,12 +242,14 @@ sager.eat('Kale');
         <section>
           <h3>Mustache</h3>
           <h4 class="fragment">This is not a typo</h4>
-          <p class="fragment">We are going to use <a href="https://mustache.github.io/" target="_blank">mustache</a> becuase so many other frameworks are built using this framework.</p>
+          <p class="fragment">We are going to use <a href="https://mustache.github.io/" target="_blank">mustache</a> becuase so many other front end frameworks follow a similar pattern.</p>
           <p class="fragment">Such as:</p>
           <ul class="slide-bullets">
-            <li class="fragment">React</li>
             <li class="fragment">Angular</li>
             <li class="fragment">Jekyll</li>
+            <li class="fragment">Vue</li>
+            <li class="fragment">React - <span class="fragment">But there's an different apprach</span></li>
+
           </ul>
         </section>
 
@@ -343,6 +376,7 @@ function loadApplication(){
             <li class="fragment">Introduction to MVC</li>
             <li class="fragment">Introduction to templating</li>
           </ul>
+          <p><a class="fragment" href="../class4/">On to Class 4</a></p>
         </section>
 
         <section>

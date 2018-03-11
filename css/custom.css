@@ -96,7 +96,7 @@ table.smalltext{
 	margin: 0 auto;
 }
 .reveal section p, .reveal section ul, .reveal section p, .reveal section ol{
-	font-size: .7em;
+	font-size: 1em;
 	font-weight: lighter;
 	line-height: 1.2em;
 }
