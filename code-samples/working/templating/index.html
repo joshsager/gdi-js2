@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Templating</title>
+  </head>
+  <body>
+    <h1>Template Exercise</h1>
+
+    <section id="albums">
+      ... loading
+    </section>
+
+    <script id="albumstpl" type="text/template">
+
+      {{#records}}
+      <h1>The Band</h1>
+        {{band}}
+        {{#albums}}
+          <h2>{{name}}</h2>
+          <em>{{year}}</em>
+          <img src="{{cover}}" />
+        {{/albums}}
+      {{/records}}
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

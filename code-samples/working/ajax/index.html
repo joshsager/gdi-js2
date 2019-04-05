@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ajax Example</title>
+  </head>
+  <body>
+    <button onclick="loadData()">Load the thing</button>
+    <article id="data">
+      ...loading
+    </article>
+
+    <script id="dataTemplate" type="text/template">
+    {{#query}}
+    {{count}}
+    {{/query}}
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

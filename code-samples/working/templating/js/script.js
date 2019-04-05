@@ -1,5 +1,3 @@
-
-
 var data = {"records":[
     { "band":"Weezer",
       "albums":[
@@ -53,3 +51,14 @@ var data = {"records":[
       ]
   }
 ]}
+
+
+function loadApplication(){
+  console.log("Yep I loaded");
+  var template = document.getElementById('albumstpl').innerHTML;
+  Mustache.parse(template);
+  var rendered = Mustache.to_html(template, data);
+  document.getElementById("albums").innerHTML = rendered;
+}
+
+window.addEventListener('load', loadApplication);

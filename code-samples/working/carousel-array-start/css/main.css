@@ -1,0 +1,6 @@
+.slide{
+  width: 600px;
+  height: 400px;
+  background: yellow;
+  background-image: url('../img/img_1.jpeg');
+}
